@@ -1,0 +1,85 @@
+.music {
+    text-align: center;
+    color: #ffffff;
+    background-color: #111111;
+    padding: 20px;
+}
+
+.music h1 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-align: left;  /* Align text to the left */
+    margin-left: 170px;
+}
+
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-items: center;
+    perspective: 1000px; /* Adds perspective for 3D effect */
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.album-item {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+    transform-style: preserve-3d; /* Enables 3D transform */
+    width: 200px; /* Default width */
+    height: 200px; /* Default height */
+   
+}
+
+.album-image {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.album-item:hover {
+    transform: scale(1.2) ; /* Scale up and bring forward on z-axis */
+    z-index: 10; /* Brings the hovered item to the front */
+    border: 2px solid #ffffff;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    color: #ffffff;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+}
+
+.album-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.stream-button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.stream-button:hover {
+    background-color: #f0f0f0;
+}

@@ -1,0 +1,42 @@
+/* Header.css */
+.header {
+  background: linear-gradient(to right, #1a1a1a, #313638);
+    padding: 30px 70px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays above other content */
+    transition: background-color 0.3s;
+    position: fixed;
+    
+  }
+  /* .header.sticky {
+    background-color: #222; /* Change background when sticky */
+  .nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    font-family: "Roboto", sans-serif; /* Change this to a font closer to the image if needed */
+    font-weight: 200; 
+    color: white;
+    text-transform: titlecase; 
+    padding-left: 350px;
+    
+  }
+  
+  .nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    /* font-weight: bold; */
+    transition: color 0.3s;
+  }
+  
+  .nav a:hover {
+    color: #aaa;
+  }
+  
+  .logo {
+    height: 60px;
+  }
+  

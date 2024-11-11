@@ -1,0 +1,150 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.subscribe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(11,18,21);
+}
+
+.subscribe-content {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    border-radius: 8px;
+    overflow: hidden;
+    align-items: flex-start;
+}
+
+.form-section {
+    flex: 1;
+    padding: 30px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.subscribe-content h1,
+.subscribe-content p,
+.terms label span,
+.recaptcha label span {
+    color: white;
+}
+
+.subscribe-content h1 {
+    margin: 0;
+    color:white;
+    font-size: 3.4rem;
+    font-weight: bold;
+    margin-bottom: 60px;
+    text-align: left;  
+    margin-left: 18px;
+}
+
+.subscribe-content p {
+    font-size:25px;
+    margin: 10px 0 15px;
+    width: 100%;
+    text-align: left;
+    margin-left: 18px;
+    margin-top: -40px;
+    line-height: 1.5;
+    max-width: 100%;
+}
+
+.subscribe-content input[type="email"],
+.subscribe-content input[type="text"] {
+    width: 80%;
+    line-height: 1.0;
+    padding: 12px;
+    margin-left: 18px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    background-color: #f5f5f5;
+}
+
+.signup-button {
+    width: 30%;
+    padding: 12px;
+    margin-left: 18px;
+    background: linear-gradient(135deg, #d3d3d3, #a9a9a9); /* Gradient for silver radiant effect */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 10px rgba(169, 169, 169, 0.6); /* Soft silver glow */
+    transition: box-shadow 0.3s ease;
+}
+
+.signup-button:hover {
+    box-shadow: 0px 0px 20px rgba(169, 169, 169, 0.8); /* Stronger silver glow on hover */
+}
+
+
+.terms {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.terms label,
+.recaptcha label {
+    display: flex;
+    margin-left: 12px;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.terms label input[type="checkbox"],
+.recaptcha label input[type="checkbox"] {
+    appearance: none;
+    margin-left: 12px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.terms label input[type="checkbox"]:checked::before,
+.recaptcha label input[type="checkbox"]:checked::before {
+    content: "✔";
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: -2px;
+    left: 2px;
+}
+
+.recaptcha {
+    margin-top: 10px;
+}
+
+.subscribe-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 30px;
+}
+
+.subscribe-image img {
+    max-width: 90%;
+    height: auto;
+   
+}

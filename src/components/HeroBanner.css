@@ -1,0 +1,75 @@
+/* src/components/HeroBanner.css */
+
+.hero-banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay-box {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(70, 67, 67, 0.6);
+    border-radius: 9px;
+    color: white;
+    width: 60%;
+    height: 90px;
+  }
+  
+  .album{
+    width: 100px;
+    height: 90px;
+    flex-shrink: 0;
+    margin-right: 16px;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .text-container h2 {
+    margin: 0;
+    font-size: 25px;
+    font-family: 'Poppins','sans-serif';
+    justify-content: space-between;
+    margin-left: 120px;
+    display: flex;
+    align-items:left;
+    margin-left:-4%;
+    margin-top: 10%;
+    margin-bottom:10%;
+    white-space: nowrap;
+    flex-grow: 1;
+
+   
+  }
+  
+  .now-button{
+    background-color:white;
+    border: none;
+    padding: 10px 18px;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family:'Poppins';
+    font-size: 20px;
+    width:140px;
+    white-space: nowrap;
+    margin-bottom:1%;
+    margin-left:200%;
+
+  }
+  
+  .stream:hover {
+    background-color: #e6e5e1;
+  }
+  

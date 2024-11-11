@@ -1,0 +1,117 @@
+.artists-container {
+  display: grid;
+  grid-template-columns: 1.2fr 1.8fr 1.2fr; /* 3-column layout with 1:2:1 ratio */
+  gap: 0px;
+  color: white;
+  font-family: Arial, sans-serif;
+  height: 80vh;
+  padding-left: 20px;
+
+  background-image: url('/public/images/aboutBG.png'); /*Replace with your image path */
+  background-size: contain;
+  background-position: center; 
+
+}
+
+.artists-text {
+  grid-column: 1 / 2; /* Places text in the first column */
+  text-align: left;
+  margin-left: 35%;
+  padding: 0%;
+}
+
+.artists-text h1 {
+  font-size: 3rem;
+  margin-left: 0px;
+  top: 0px;
+}
+
+.artists-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: white;
+  margin-left: 15px;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.artists-images {
+  grid-column: 2 / 3; /* Places group image in the center column */
+  display: flex;
+  justify-content: left;
+  position: relative;
+}
+
+.group-image {
+  width: 80vh; /* Make image /* Adjust max width as needed */
+  height: 80vh;
+  border-radius: 50%;
+  margin-top:30px;
+  object-fit: cover;
+  align-items: left;
+  margin-left: 10px;
+}
+
+.profile-images {
+  grid-column: 3 / 4;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 20px;
+}
+
+.profile {
+  width: 150px; /* Adjust size of small images */
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+  animation: float 3s ease-in-out infinite;
+}
+/* Float animation for up and down motion */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Adjust the distance of the floating effect */
+  }
+}
+/* Zig-Zag overlapping positioning */
+.float1 {
+  margin-top: 20px;
+  margin-left: -40px;
+  z-index: 5;
+}
+
+.float2 {
+  margin-top: -60px;
+  margin-left: 130px;
+  z-index: 4;
+}
+
+.float3 {
+  margin-top: -50px;
+  margin-left: -20px;
+  z-index: 3;
+}
+
+.float4 {
+  margin-top: -50px;
+  margin-left: 130px;
+  z-index: 2;
+}
+
+.float5 {
+  margin-top: -60px;
+  margin-left: -30px;
+  z-index: 1;
+}
